@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="fotoIcon.png">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Imagens dinamicas nos sites servem para que o tamanho da imagem se adapte a tela do usuario final, independente que seja celular,tablet,tv ou computador</p>
+    <h2>Usando a tag picture</h2>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png " alt="foto grande">
+    </picture>
+    <h1>Audio no meu site</h1>
+
+    <audio preload="metadata" controls autoplay>
+        <source src="imagens/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso não consiga reproduzir o audio, baixe ele pelo link abaixo</p>
+    <br>
+    <a href="imagens/guanacast-33.mp3" download="imagens/guanacast-33.mp3" type="application/mp3">CLIQUE AQUI</a>
+    <p>Audio inserido de forma simples</p>
+    <audio src="imagens/happy-mistake.mp3" controls>
+
+    </audio>
+    <p>Quando usamos as tags &lt;audio&gt; e &lt;picture&gt; trabalhamos um exemplo tipo <code>if else</code> quando temos temos opções de carregamento de midia, em picture saimos da imagem mais alta para a mais baixa com base na tela e no audio caso o navegador não suportar aquele tipo de audio ele vai trocando </p>
+
+    <h1>Video no meu site</h1>
+    <p>Iremos adicionar um video usando a tag &lt;video&gt;</p>
+</body>
+</html>
