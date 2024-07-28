@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="fotoIcon.png">
     <title>Imagens dinamicas</title>
+    <link rel="icon" href="img.png">
 </head>
 <body>
     <h1>Imagens dinamicas</h1>
@@ -16,7 +16,7 @@
     </picture>
     <h1>Audio no meu site</h1>
 
-    <audio preload="metadata" controls autoplay>
+    <audio preload="metadata" controls>
         <source src="imagens/guanacast-33.mp3" type="audio/mpeg">
     </audio>
     <p>Caso não consiga reproduzir o audio, baixe ele pelo link abaixo</p>
@@ -30,7 +30,12 @@
 
     <h1>Video no meu site</h1>
     <p>Iremos adicionar um video usando a tag &lt;video&gt;</p>
-    <video src="imagens/videoTeste.mp4" width="500" poster="imagens/thumb.jpg" controls></video>
+    <video width="500" poster="imagens/thumb.jpg" controls>
+        <source src="imagens/videoTeste.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade para abrir o video</p>
+    </video>
     <p>Com o atributo poster na tag &lt;video&gt; podemos colocar uma thumbnail parecida com o youtube. OBS: Lembre-se de alterar o tamanho da imagem para a thumbnail</p>
+    <h2>Video com hospedagem externa usando o youtube</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3r7LeKFXd7E?si=dnfx8HbGJ0Ym8g89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
