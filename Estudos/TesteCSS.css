@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    background-color: #191b1d;
+    font-family: Arial;
+}
+h1,h2{
+    color: #ffffff;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+    a{
+        font-size: 30px;
+        color: white;
+    }
+}
+
+p{
+    color: white;
+    font-family: "American Typewriter";
+    text-align: center;
+}
+ul{
+    color: #3e9ae4;
+    text-align:center;
+}
+ol{
+   color: brown;
+    text-align: center;
+}
+dl{
+    color: white;
+    text-align: center;
+}
